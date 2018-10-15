@@ -1,15 +1,18 @@
 from tkinter import *
 import time
+import os
 
 def loop():
-    x=1
+    screenshot_count = 1
+    if not os.path.exists('screenshots'):
+        os.makedirs('screenshots')
     while True:
 
-        n=w1.get()
+        n = w1.get()
         time.sleep(n)
         T.insert(END, "Screenshot "+ str(x)+"\n")
-        x=x+1
-        master.
+        os.system("screencapture screenshots/Screenshot_"+str(screenshot_count) + ".png")
+        screenshot_count = screenshot_count + 1
         master.update()
 
 
