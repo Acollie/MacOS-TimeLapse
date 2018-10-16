@@ -12,5 +12,6 @@ Otherwise look at the issues and any fixes on that would be greatly appreciated
 ### Build guide
 
 **Dependencies**  
-python 3.7  
-tkinter
+- python 3.7  
+- tkinter
+- opencv-python
